@@ -1,0 +1,16 @@
+[project]
+name = "lsl-viewer"
+version = "0.1.0"
+description = "A small LabStreamingLayer demo with simulated EEG, realtime plotting, and CSV logging."
+requires-python = ">=3.9"
+dependencies = [
+  "pylsl>=1.16.2,<2",
+  "matplotlib>=3.7,<4",
+]
+
+[project.scripts]
+lsl-viewer = "lsl_viewer.app:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
